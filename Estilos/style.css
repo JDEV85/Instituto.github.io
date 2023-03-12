@@ -1,0 +1,451 @@
+*{box-sizing: border-box;
+       
+}
+
+:root{
+    --main-font-color: #002233;
+    --lfont-color: #0088cc;
+    --lterfont-color: #cceeff;
+    --mid-blue: #006999;
+    --main-red: #660000;
+    --lit-red: #ffcccc;
+    --mid-red:#ff1a1a ;
+    --body-color: #e6f2ff;
+    --body-lighter: #f3f8fd;
+    --ntch-color: #e6f7ff;
+    --rws-hover-color: #ccefff;
+    --td-hover-color:#99dfff;
+    --add-form-backcolor: #4d4dff;
+    --add-form-border-color: #3333ff; 
+    --add-form-pholder-color: #8080ff; 
+    --add-frminp-border-color: #b3b3ff;
+}
+
+body{
+    background-color: #e6f2ff;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+/* Nav bar -------------------------------------- */
+.nav-bar{
+    color: red;
+    background-color:#cce5ff;
+    height: 40px;
+    font-size: 20px;
+    padding-top: 5px;
+    border-bottom: var(--main-font-color) solid 2px;
+
+    
+
+}
+
+.nav-bar a, .add-link a{
+    text-decoration: none;
+    color: var(--main-font-color);
+    padding-left: 5px;
+    transition: 100ms;
+    
+}
+
+.nav-bar a:link, .add-link a:link{
+    text-decoration: none;    
+}
+
+.nav-bar a:hover{
+    font-size: 21px;
+    color: blue;
+    text-shadow: white 1px 1px;  
+    
+}
+
+.profile-text{
+    color: var(--main-font-color);
+    
+    
+}
+
+.add-link a:hover{
+    font-size:18px;
+    color: green;
+    
+}
+
+
+.anime-icons:hover{
+    transform: rotate(360deg);
+    
+}
+
+
+
+.material-icons, .anime-icons {
+    vertical-align: bottom;
+    transition: transform  500ms ease-in-out;
+    
+}
+
+
+/* Login Form ----------------------------------- */
+
+.icon-container .material-icons{
+    font-size: 80px;
+}
+
+.log-form-div{
+    background-color: var(--main-red);
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    text-align:center;
+    color: white;
+    border: white solid 2px;
+    position: relative;
+    top: 100px;
+    background-image: conic-gradient(#7979d2 45deg, white 90deg, white 225deg, #7979d2 250deg);
+    box-shadow: rgba(128, 128, 128, 0.341) 4px 10px 10px, rgba(128, 128, 128, 0.341) -4px -2px 15px ;
+    
+}
+
+.log-form{
+    
+    height: 70%;
+    width: 90%;
+    text-align: center; 
+    margin: auto;
+    background-image: linear-gradient(to top right, rgb(72, 72, 248), rgb(255, 51, 51));
+    border: solid thin beige;
+}   
+
+.log-form input {
+    width: 90%;
+    height: 10%;
+}
+
+.log-form input[Type=text], input[Type=password]{
+    border-style: none none solid none;
+    border-color:white;
+    background-color: transparent;
+    border-width: 1px;
+    
+}
+
+.log-form input[Type=submit]{
+    height: 15%;
+    background-color: transparent;
+    border-style: solid none none solid;
+    border-color: rgba(245, 245, 220, 0.525);
+    border-width: thin;
+    box-shadow: rgba(0, 0, 0, 0.727) 2px 2px 5px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.222), rgba(255, 255, 255, 0));
+    cursor: pointer;
+    color: beige;
+}
+
+.log-form input[Type=submit]:active{
+    box-shadow: rgba(0, 0, 0, 0.727) -2px -2px 5px;
+    border-style: none solid solid none;
+}
+
+.log-form input[Type=submit]:hover{
+    animation: movin-colors 3s infinite ;
+    animation-timing-function:cubic-bezier(5,1,1,5);
+}
+
+
+/* Animations */
+
+@keyframes movin-colors{
+   from { border-style: solid none none solid;
+    border-color: rgba(245, 245, 220, 0.525);}
+
+   to {border-color: rgb(245, 245, 220);
+        background-color: blueviolet;
+        color:gold;
+    }
+
+}
+
+
+
+
+::placeholder{
+    color:beige;
+}
+
+/* Forms ----------------------------------------- */
+.add-form-div{
+    background-color: var(--main-red);
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    text-align:center;
+    color: white;
+    border: white solid 2px;
+    position: relative;
+    top: 50px;
+    background-image: conic-gradient(#7979d2 45deg, white 90deg, white 225deg, #7979d2 250deg);
+    box-shadow: rgba(128, 128, 128, 0.341) 4px 10px 10px, rgba(128, 128, 128, 0.341) -4px -2px 15px ;
+
+}
+
+.form-div-search{
+    padding-bottom: 3px;
+    width: 190px;
+    background-color: white;
+    border: solid 1px var(--mid-blue);
+    border-radius: 5px;
+    margin-bottom: 5px; 
+    
+}
+
+.form-div-search:hover{
+    border-color: black;
+
+}
+
+.serch-form input[Type="submit"]{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+
+.serch-form input[Type="search"]{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+.serch-form input[Type="search"]:focus{
+    background-color:transparent;
+    outline: none;
+}
+
+.serch-form i{
+    /*margin-left: -12px; */
+    position: absolute;
+    z-index: 1;
+    color: blue;
+    
+
+}
+
+.add-form{
+    width: 80%;
+    height: 90%;
+    background-color: #4d4dff;
+    border: solid 2px #3333ff;
+    margin: auto;
+    text-align: center;
+}
+
+.add-form .p-text{
+    margin: 4px 0 4px 0;
+    
+}
+
+.add-form ::placeholder{
+    color:#8080ff;
+    text-align: center;
+}
+
+.add-form input, .add-form select{
+    width: 80%;
+    height: 5%;
+    text-align: center;
+    background-color: transparent;
+    border-width: 0 0 1px 0;
+    border-color: #b3b3ff;
+    
+}
+
+.add-form input ,/*[Type="text"], .add-form input[Type="email"],*/ .add-form select {
+    color: beige;
+}
+
+.add-form option{
+    background-color: var(--add-form-border-color);
+    cursor: pointer;
+    
+}
+
+.add-form option:hover{
+    cursor: pointer;
+}
+
+.add-form input[Type="submit"]{
+    color: beige;
+    border: 1px solid var(--add-frminp-border-color);
+    box-shadow: 2px 2px var(--add-form-border-color);
+    height: 8%;
+    cursor: pointer;
+    transition: background-color 1s;
+    
+}
+
+
+.add-form input[Type="submit"]:hover{
+    background-color: #0022336d;
+    
+}
+
+.add-form input[Type="submit"]:active{
+    box-shadow: -3px -3px var(--add-form-border-color);
+    background-color: var(--main-font-color);
+}
+
+.add-form select{
+    cursor: pointer;
+}
+
+.delete-form-div{
+    height: 300px;
+    background-image: none;
+    background-color: transparent;
+    color:var(--main-red);
+    border-color: var(--mid-red);
+    
+}
+
+.delete-form input[type="submit"]{
+    height: 20%;
+}
+
+.delete-form input[type="submit"]:hover{
+    background-color: rgba(255, 0, 0, 0.737);
+}
+
+.delete-form{
+    height: 70%;
+    width: 90%;
+    
+}
+
+.delete-form p{
+    color: beige;
+}
+
+/* Tables --------------------------------------- */
+
+
+.table-container{
+    width: 1500px;
+    height: 540px;
+    
+}
+
+.table-view{
+    width: 100%;background-color: var(--body-lighter);
+    border: var(--main-font-color) solid 2px;
+    text-align: left;
+    border-collapse:collapse;
+    
+
+    
+}
+
+.table-view td ,.table-view tr,.table-view th{
+    color: blue;
+    border:silver solid 1px;
+    padding: 3px;
+    
+}
+
+.table-view th{
+    background-color: var(--mid-blue);
+    color: var(--body-lighter);
+    border-bottom: 1px solid var(--main-font-color);
+    border-left: 1px solid var(--main-font-color);
+    border-right: 1px solid var(--main-font-color);
+}
+
+.table-view tr:nth-child(even){
+    background-color: var(--ntch-color);
+}
+
+.table-view tr:hover{
+    background-color: var(--rws-hover-color)
+}
+
+
+.table-view td:hover{
+    background-color:var(--td-hover-color);
+}
+
+.table-view .freeze-col{
+    position: sticky;
+}
+
+/* Buttuns ---------------------------------------- */
+
+.edit-but, .dang-but{
+    padding-left: 10px;
+    text-decoration: none;
+    
+}
+
+.edit-but:link , .dang-but:link{
+    text-decoration: none;
+}
+
+
+.edit-but{
+    color: blue;
+    
+}
+
+.dang-but{
+    color: red;
+}
+
+.nav-bar .menu-but{
+    color: #002233;
+    font-size: 30px;
+    vertical-align: text-bottom;
+    cursor: pointer;
+    display: none;
+}
+
+/* Alertas -------------------*/
+h1 .warning{
+    color: var(--mid-red);
+    font-size:inherit;
+    vertical-align:text-top;
+    margin-top: 2px;
+    
+
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar .menu-but{
+        display: inline;
+
+    }
+
+   .nav-bar .menu-but:hover{
+    color: blue;
+    background-color:var(--td-hover-color)
+   } 
+    
+
+    .nav-bar{
+        overflow: hidden;
+
+
+    }
+
+    .nav-bar a{
+        display: block;
+
+    }
+
+    .table-container{
+        width: 700px;
+    }
+}
